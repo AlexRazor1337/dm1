@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/index.js"></script>
+    <div id="wrapper">
+        <div id="outter_container">
+            <div id="container">
+                <label for="A">Input A:</label>
+                <input type="text" id="A">
+
+                <label for="B">Input B:</label>
+                <input type="text" id="B">
+
+                <br>
+                <center>
+                    <label for="ip">Select operation:</label>
+                    <select name="operation" id="op">
+                        <option value="1">A&#8838;B</option>
+                        <option value="2">A&#8746;B</option>
+                        <option value="3">A&#8745;B</option>
+                        <option value="4">A\B</option>
+                        <option value="5">B\A</option>
+                        <option value="6">A&#x2206;B</option>
+                        <option value="7">B&#8838;A</option>
+                    </select>
+                    <br>
+                    <div id="result">
+                        
+                    </div>
+                    <br>
+                    <button onclick="compute()">Compute</button>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
