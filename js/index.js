@@ -131,10 +131,10 @@ function symmetrical(A, B) {
 }
 
 function prepare(stringA, stringB) {
-    let A = [... new Set(stringA.replace( /[^\sA-Z]/g, '').split(" "))].sort().filter(function (el) {
+    let A = [... new Set(stringA.replace( /[^\sa-z]/g, '').split(" "))].sort().filter(function (el) {
         return el != "" && el.length == 1;
     });
-    let B = [... new Set(stringB.replace( /[^\sA-Z]/g, '').split(" "))].sort().filter(function (el) {
+    let B = [... new Set(stringB.replace( /[^\sa-z]/g, '').split(" "))].sort().filter(function (el) {
         return el != "" && el.length == 1;
     });
 
